@@ -2,20 +2,191 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo{
+  font-weight: 700px;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.logo span {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+nav a {
+  margin: 0 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+.projectContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.textSection {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.textSection h2 {
+  font-size: 3rem;
+  color: #b0b0b0;
+  line-height: 1.2;
+}
+
+.textSection h2 strong {
+  color: #000;
+}
+
+.navigation {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.navButton {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.pageInfo {
+  color: #b0b0b0;
+  
+}
+
+.viewProject {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.viewProject:hover {
+  border-color: #000;
+}
+
+.imageContainer {
+  flex: 1;
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+/* Footer Styles */
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-section ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin: 8px 0;
+}
+
+.social-icons {
+
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+.social-icons svg {
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-icons svg:hover {
+  color: #ccc;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.8rem;
+  color: #777;
+  border-top: 1px solid #333;
+}
+
+
